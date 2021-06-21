@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <script src="http://www.webglearth.com/v2/api.js"></script>
+  <script src="script.js" defer>
+  </script>
+
+  <title>ISS Tracer</title>
+  <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body onload="initialize()">
+
+  <div class="container">
+    <div id="earth_div"></div>
+    <div class="list">
+      <div class="dropdown">
+        <button class="people">People Present in SpaceCraft<br>Click Here</button>
+        <ul class="astros">
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyDydfrb-8de3Dvhhbdlc9V9KpKIn1sX0bY",
+      authDomain: "space-station-tracker-24966.firebaseapp.com",
+      projectId: "space-station-tracker-24966",
+      storageBucket: "space-station-tracker-24966.appspot.com",
+      messagingSenderId: "110935171408",
+      appId: "1:110935171408:web:b8a276d637821d1ba8cc55",
+      measurementId: "G-CXD914KE7X"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+</body>
+
+</html>
